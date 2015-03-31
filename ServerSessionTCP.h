@@ -18,9 +18,6 @@ public:
 
 	boost::asio::ssl::stream<boost::asio::ip::tcp::socket>::lowest_layer_type& GetSocket() const;
 	virtual passfail Connect(string host, string port) override;
-
-	virtual void WriteAsync(string& writeData) override;
-	virtual void WriteAsync(string& writeData, std::map<string, string> metaHeaders) override;
 protected:
 	virtual void ReadHandler(const boost::system::error_code& errorCode, size bytesTransferred) override;
 private:

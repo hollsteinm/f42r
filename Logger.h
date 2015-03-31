@@ -47,7 +47,6 @@ protected:
 
 private:
 	void Write(string message);
-	void WriteRemote(string message);
 	void WriteFile(string message);
 	void WriteCon(string message);
 

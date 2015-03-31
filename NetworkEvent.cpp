@@ -18,6 +18,14 @@ NetworkEvent::NetworkEvent(string message, std::map<string, string> meta, string
 	id = identity;
 }
 
+NetworkEvent::NetworkEvent()
+	:meta()
+{
+	type = NetworkProtocol::Message;
+	message = "";
+	id = identity;
+}
+
 NetworkEvent::~NetworkEvent()
 {
 	

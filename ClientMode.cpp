@@ -66,6 +66,7 @@ void ClientMode::BasicMode(boost::shared_ptr<CommandParser> Parser)
 		meta.emplace(std::pair<string, string>(CLASS, NetworkProtocol::to_string(NetworkProtocol::Checkin)));
 		meta.emplace(std::pair<string, string>(SERVICE, Service->Identifier()));
 		meta.emplace(std::pair<string, string>(SESSION_IDENTITY, Parser->GetValue(SESSION_IDENTITY)));
+
 		for (auto pair : Harvester->GetAllInfoPairs())
 		{
 			meta.emplace(std::pair<string, string>(pair.first, pair.second));

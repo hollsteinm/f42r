@@ -24,7 +24,8 @@ class NetworkEvent :
 public:
 	NetworkEvent(string message, std::map<string, string> meta, NetworkProtocol::Type type);
 	NetworkEvent(string message, std::map<string, string> meta, string type);
-	~NetworkEvent();
+	NetworkEvent(); //See if we can avoid this
+	virtual ~NetworkEvent();
 
 	string GetMessageData() const;
 	std::map<string, string> GetMeta() const;

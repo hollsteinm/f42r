@@ -73,13 +73,3 @@ void ServerSessionTCP::ReadHandler(const boost::system::error_code& errorCode, s
 		ReadAsync();
 	}
 }
-
-void ServerSessionTCP::WriteAsync(string& writeData)
-{
-	SecureTCP::WriteAsync(writeData);
-}
-
-void ServerSessionTCP::WriteAsync(string& writeData, std::map<string, string> metaHeaders)
-{
-	SecureTCP::WriteAsync(writeData, metaHeaders);
-}

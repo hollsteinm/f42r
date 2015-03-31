@@ -14,5 +14,6 @@
 #define BODY_END			"}"
 #define NULL_META			"nil"
 #define IP					"ip"
+#define SERIALIZED			"serialized"
 
 #endif

@@ -11,6 +11,7 @@ public:
 
 	virtual void WriteAsync(string& writeData);
 	virtual void WriteAsync(string& writeData, std::map<string, string> metaHeaders);
+	virtual void WriteAsync(struct Event* event);
 	virtual void ReadAsync();
 	virtual logic ConnectionEstablished();
 	virtual passfail Connect(string host, string port) = 0;
