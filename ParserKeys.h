@@ -1,0 +1,21 @@
+#ifndef PARSER_KEYS
+#define PARSER_KEYS
+#define MODE						"mode"
+#define HOST						"host"
+#define PORT						"port"
+#define CLIENT_CONNECTION_TYPE		"clientConnectionType"
+#define BODY						"body"
+#define META						"meta"
+#define CHAIN_FILE					"chainfile"
+#define KEY_FILE					"keyfile"
+#define DH_FILE						"dhfile"
+#define PASSWORD					"password"
+#define VERIFY_FILE					"verifyFile"
+#define CLASS						"class"
+#define MESSAGE_CLASS				"message"
+#define SERVICE						"service"
+#define SESSION_IDENTITY			"identity"
+#define LOG_METHOD					"logMethod"
+#define LOG_CONFIG					"logConfig"
+#define LOG_FILEPATH				"logFilepath"
+#endif

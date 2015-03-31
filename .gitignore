@@ -1,0 +1,9 @@
+*.sdf
+*.suo
+*.vcxproj
+*.aps
+*.filters
+*.user
+*.opensdf
+Debug/**
+x64/**
