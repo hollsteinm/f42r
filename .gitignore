@@ -1,6 +1,5 @@
 *.sdf
 *.suo
-*.vcxproj
 *.aps
 *.filters
 *.user
